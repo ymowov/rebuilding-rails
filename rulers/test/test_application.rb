@@ -11,7 +11,7 @@ class RulersAppTest < Test::Unit::TestCase
 	end
 
 	def test_request
-		get "/"
+		post "/my/url" # get "/"
 		assert last_response.ok?
 		body = last_response.body
 		assert body["Hello"]
