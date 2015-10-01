@@ -1,6 +1,6 @@
 class QuotesController < Rulers::Controller
   def a_quote
-    "Environment:#{env}"
+    File.open("public/index.html", "rb").read
   end
 
   def exception
